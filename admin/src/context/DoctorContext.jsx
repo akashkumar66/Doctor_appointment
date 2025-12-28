@@ -124,7 +124,7 @@ const DoctorContextProvider = (props) => {
     }
 
     useEffect(()=>{
-        getAppointments();
+        {dToken && getAppointments();}
     },[appointments])
 
     return (
